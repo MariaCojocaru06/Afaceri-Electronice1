@@ -50,7 +50,7 @@ export default function SignInSide() {
           if(data.user.email==='admin@gmail.com'){
             isAdmin=true;
             localStorage.setItem("isAdmin",isAdmin)
-            window.location.href = "http://localhost:3000/admin";}else{window.location.href = "http://localhost:3002/";}
+            window.location.href = "http://localhost:3002/admin";}else{window.location.href = "http://localhost:3002/";}
         
         }
       })

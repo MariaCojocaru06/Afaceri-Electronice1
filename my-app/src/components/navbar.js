@@ -27,7 +27,7 @@ const NavigationBar = () => {
       draggable: true,
       progress: undefined,
   });
-  window.location.href = "http://localhost:3000/"
+  window.location.href = "http://localhost:3002/"
     // Poate redirecționa utilizatorul la pagina de autentificare sau altă pagină dorită
     // window.location.href = "/login";
   };
