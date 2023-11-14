@@ -112,7 +112,7 @@ const CantitatePlus = async (idP) => {
               <Card.Img variant="top" src={prod.img} alt={prod.denumire} />
               <Card.Body>
                 <Card.Title>{prod.denumire}</Card.Title>
-                <Card.Text>Price: {prod.pret}</Card.Text>
+                <Card.Text>Pret: {prod.pret}</Card.Text>
                 <div className="quantity-control">
                 
                 <button
@@ -132,7 +132,7 @@ const CantitatePlus = async (idP) => {
                    className="btn btn-danger"
                     onClick={() => stergeProdus(prod.id)}
                   >
-                    Remove
+                    Stergere
                   </button>
                  
                 </div>
@@ -144,8 +144,8 @@ const CantitatePlus = async (idP) => {
 
       <div className="cart-summary">
         {/* <h1>Cart Summary</h1> */}
-        <p>Total Value: {total}</p>
-        <Button onClick={golire}>Clear Cart</Button>
+        <p>Total {total}</p>
+        <Button onClick={golire}>Golire cos</Button>
         {checkout ? (
         <PayPal orderValue={total} />
       ) : (
@@ -154,7 +154,7 @@ const CantitatePlus = async (idP) => {
             setCheckOut(true);
           }}
         >
-          Checkout
+          Plata card
         </Button>)}
       </div>
     </div>

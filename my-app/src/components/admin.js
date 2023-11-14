@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Form, Button, Container, Row, Col } from "react-bootstrap";
+import { ToastContainer, toast } from 'react-toastify';
 
 function AdminPage() {
   const [productData, setProductData] = useState({
@@ -28,6 +29,15 @@ function AdminPage() {
 
       if (response.status === 201) {
         console.log("Produsul a fost adăugat cu succes!");
+        toast.success(`Produs adaugat`, {
+          position: "top-right",
+          autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+      });
         setProductData({
             denumire: " ",
             pret: 0.00,
