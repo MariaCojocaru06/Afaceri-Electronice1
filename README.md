@@ -15,4 +15,11 @@ Functionalitati:
 4. Plata prin PayPal
 5. Pagina de admin cu autorizare pentru adaugarea produselor
 
+
+Tehnologii:
+React app
+Bootstrap components
+Javascript
+SQLite
+
    
